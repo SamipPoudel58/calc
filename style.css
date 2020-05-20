@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f9fafb;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.credit {
+  color: rgb(172, 168, 168);
+}
+
+.container {
+  background-color: white;
+  margin: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+.input {
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  display: block;
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 15px 0;
+  font-size: 14px;
+}
+
+.row {
+  display: flex;
+}
+
+.row > div {
+  height: 50px;
+  display: flex;
+  width: 100%;
+  margin: 10px;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+}
+
+.sym.equal {
+  background-color: rgb(11, 175, 11);
+  color: white;
+}
+
+.sym.divide {
+  background-color: rgb(5, 172, 172);
+  color: white;
+}
+.sym.multiply {
+  background-color: rgb(248, 152, 7);
+  color: white;
+}
+.sym.subtract {
+  background-color: rgb(152, 95, 204);
+  color: white;
+}
+.sym.add {
+  background-color: rgb(7, 131, 248);
+  color: white;
+}
+
+.sym.equal:hover {
+  cursor: pointer;
+  background-color: rgb(9, 155, 9);
+}
+.num:hover {
+  background-color: #e6e7e9f3;
+  cursor: pointer;
+}
+
+.sym:hover {
+  cursor: pointer;
+}
+
+.C {
+  background-color: rgb(211, 208, 208);
+  color: black;
+}
+
+.D {
+  background-color: rgb(211, 208, 208);
+  color: black;
+}
+
+.per {
+  background-color: rgb(211, 208, 208);
+  color: black;
+}

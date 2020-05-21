@@ -1,6 +1,10 @@
 const container = document.getElementById("container");
 const input = document.getElementById("input");
-const num = document.querySelectorAll("num");
+const num = document.getElementsByClassName("num");
+const firsticons = document.getElementsByClassName("firsticons");
+const myswitch = document.getElementById("switch");
+const switchbox = document.getElementById("switchbox");
+const main = document.getElementById("main");
 
 input.value = "";
 
@@ -76,4 +80,18 @@ container.addEventListener("click", function (e) {
   let clicked_class = e.target.classList;
   let clicked_text = e.target.innerHTML;
   showItem(clicked_class, clicked_text);
+});
+
+myswitch.addEventListener("click", function (e) {
+  e.target.classList.toggle("on");
+  container.classList.toggle("dark");
+  input.classList.toggle("dark");
+  switchbox.classList.toggle("dark");
+  main.classList.toggle("dark");
+  for (i = 0; i < num.length; i++) {
+    num[i].classList.toggle("dark");
+  }
+  for (i = 0; i < firsticons.length; i++) {
+    firsticons[i].classList.toggle("dark");
+  }
 });

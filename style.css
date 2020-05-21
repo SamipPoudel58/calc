@@ -1,8 +1,10 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-body {
+.main {
   background-color: #f9fafb;
   font-family: "Poppins", sans-serif;
   display: flex;
@@ -12,16 +14,63 @@ body {
   align-items: center;
 }
 
+.main.dark {
+  background-color: black;
+}
+
+.switchbox {
+  background-color: white;
+  height: 50px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  width: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.switchbox.dark {
+  background-color: #141414;
+  color: white;
+}
+
+.switch {
+  background-color: rgb(211, 208, 208);
+  height: 20px;
+  width: 20px;
+  margin-left: 0.8rem;
+  border-radius: 10px;
+}
+
+.switch.on {
+  background-color: #11e0f3;
+}
+
+.switch.on:hover {
+  background-color: #11e0f3;
+}
+
+.switch:hover {
+  cursor: pointer;
+  background-color: rgb(189, 187, 187);
+}
+
 .credit {
+  margin-top: 20px;
   color: rgb(172, 168, 168);
 }
 
 .container {
   background-color: white;
-  margin: 5px;
+  margin: 20px 5px 5px 5px;
   padding: 20px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
   border-radius: 5px;
+}
+
+.container.dark {
+  background-color: #141414;
+  box-shadow: 0 2px 10px rgba(27, 26, 26, 0.3);
 }
 
 .input {
@@ -32,6 +81,12 @@ body {
   padding: 15px;
   margin: 5px 0 15px 0;
   font-size: 14px;
+}
+
+.input.dark {
+  background-color: black;
+  border: black;
+  color: white;
 }
 
 .row {
@@ -80,6 +135,11 @@ body {
   cursor: pointer;
 }
 
+.num.dark:hover {
+  background-color: rgb(219, 216, 216);
+  color: black;
+}
+
 .sym:hover {
   cursor: pointer;
 }
@@ -87,6 +147,21 @@ body {
 .C {
   background-color: rgb(211, 208, 208);
   color: black;
+}
+
+.C.dark {
+  background-color: #313131;
+  color: rgb(226, 224, 224);
+}
+
+.D.dark {
+  background-color: #313131;
+  color: rgb(226, 224, 224);
+}
+
+.per.dark {
+  background-color: #313131;
+  color: rgb(226, 224, 224);
 }
 
 .D {
@@ -97,4 +172,8 @@ body {
 .per {
   background-color: rgb(211, 208, 208);
   color: black;
+}
+
+.num.dark {
+  color: white;
 }

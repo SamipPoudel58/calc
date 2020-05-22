@@ -29,9 +29,15 @@
   align-items: center;
 }
 
+.switchbox:hover {
+  cursor: pointer;
+}
+
 .switchbox.dark {
   background-color: #141414;
   color: white;
+  border: 2px solid #11e0f3;
+  box-shadow: 0 2px 10px #64dce7;
 }
 
 .switch {
@@ -62,7 +68,7 @@
 
 .container {
   background-color: white;
-  margin: 20px 5px 5px 5px;
+  margin: 30px 5px 5px 5px;
   padding: 20px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
   border-radius: 5px;
@@ -81,6 +87,10 @@
   padding: 15px;
   margin: 5px 0 15px 0;
   font-size: 14px;
+}
+
+.input:focus {
+  outline: 0;
 }
 
 .input.dark {

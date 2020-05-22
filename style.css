@@ -16,6 +16,15 @@
   align-items: center;
 }
 
+p {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
 .main.dark {
   background-color: black;
 }
@@ -142,6 +151,17 @@
   cursor: pointer;
   background-color: rgb(9, 155, 9);
 }
+
+.num,
+.sym {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
 .num:hover {
   background-color: #e6e7e9f3;
   cursor: pointer;

@@ -84,7 +84,6 @@ p {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
   border-radius: 5px;
 }
-
 .container.dark {
   background-color: #141414;
   box-shadow: 0 2px 10px rgba(27, 26, 26, 0.3);
@@ -191,7 +190,7 @@ p {
   color: rgb(226, 224, 224);
 }
 
-.per.dark {
+.dot.dark {
   background-color: #313131;
   color: rgb(226, 224, 224);
 }
@@ -201,7 +200,7 @@ p {
   color: black;
 }
 
-.per {
+.dot {
   background-color: rgb(211, 208, 208);
   color: black;
 }

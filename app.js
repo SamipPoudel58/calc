@@ -6,7 +6,7 @@ const switchbox = document.getElementById("switchbox");
 const main = document.getElementById("main");
 
 input.value = "";
-let defaultTheme = "light";
+
 
 function showItem(values, text) {
   values.forEach((inputs) => {
@@ -30,7 +30,7 @@ function enter() {
     // alert("Congrats! You Have Activated The CheatSheet!!!! Hit OK !");
     window.location.href = "https://samippoudel.com.np";
   } else {
-    let final_ans = eval(input.value);
+    let final_ans = Function('return ' + input.value)();
     input.value = final_ans;
   }
 }
@@ -55,29 +55,8 @@ document.addEventListener("keydown", function (e) {
   }
 });
 
-switchbox.addEventListener("click", function (e) {
-  if (defaultTheme === "light") {
-    document.documentElement.style.cssText = `
-    --main_color1: black;
-  --main_color2: #141414;
-  --gray: rgb(165, 164, 164);
-  --text_color: white;
-  --switch_shadow: #64dce7;
-  --first_row: #313131;
-  --switch_border: 2px solid #11e0f3;
-  --hover_text: black;`;
-    defaultTheme = "dark";
-  } else if (defaultTheme === "dark") {
-    document.documentElement.style.cssText = `
-    --main_color1: #f9fafb;
-  --main_color2: white;
-  --gray: rgb(165, 164, 164);
-  --text_color: black;
-  --switch_shadow: rgba(0, 0, 0, 0.3);
-  --first_row: rgb(211, 208, 208);
-  --switch_border: none;
-  --hover_text: black;
-    `;
-    defaultTheme = "light";
-  }
-});
+
+
+switchbox.addEventListener("click",function(e){
+  document.documentElement.classList.toggle("dark");
+})

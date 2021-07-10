@@ -4,9 +4,11 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  
 }
 
-html {
+
+:root {
   --main_color1: #f9fafb;
   --main_color2: white;
   --gray: rgb(165, 164, 164);
@@ -15,14 +17,17 @@ html {
   --first_row: rgb(211, 208, 208);
   --switch_border: none;
   --hover_text: black;
+}
 
-  /* --main_color1: black;
+[class="dark"]{
+  --main_color1: black;
   --main_color2: #141414;
   --gray: rgb(165, 164, 164);
   --text_color: white;
   --switch_shadow: #64dce7;
   --first_row: #313131;
-  --switch_border: 2px solid #11e0f3; */
+  --switch_border: 2px solid #11e0f3;
+  --hover_text: black;
 }
 
 .main {
